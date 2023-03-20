@@ -2,8 +2,9 @@ import { Flex, Wrap, Text, WrapItem } from "@chakra-ui/react";
 import React from "react";
 
 export default function ContactInfo() {
+  
   return (
-    <Wrap spacing="10rem" justify="center" marginRight="-10">
+    <>
       <WrapItem>
         <Flex
           sx={{
@@ -55,6 +56,6 @@ export default function ContactInfo() {
           </Text>
         </Flex>
       </WrapItem>
-    </Wrap>
+    </>
   );
 }

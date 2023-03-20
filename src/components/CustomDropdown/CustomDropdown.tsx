@@ -13,7 +13,6 @@ import React from "react";
 
 const DropdownContainer = chakra("div", {
   baseStyle: {
-    color: "white",
     "&.hidden .option:not(:first-child)": {
       display: "none",
     },
@@ -32,9 +31,10 @@ const DropdownContainer = chakra("div", {
       padding: ".5rem",
       display: "flex",
       cursor: "pointer",
+      color: "white",
+
       "&:first-child": {
         borderTopRadius: "2px",
-        border: "1px solid red",
       },
       "&:last-child": {
         borderBottomRadius: "2px",
@@ -47,28 +47,35 @@ export default function CustomDropdown({
   options,
   updateSelected,
   selected,
+  placeholder,
+  className,
 }: {
   options: string[];
   updateSelected: (selected: string) => void;
   selected: string;
+  placeholder: string;
+  className?: string;
 }) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <DropdownContainer
-      className={isOpen ? "" : "hidden"}
+      className={`${className} ${isOpen ? "" : "hidden"}`}
       onClick={() => setIsOpen(!isOpen)}
     >
       <Flex
         className="option"
-        color="#fff"
-        width="20rem"
+        width="100%"
         sx={{
           justifyContent: "space-between",
         }}
       >
-        <Text>Test</Text>
-        <Text>{selected}</Text>
+        <Text variant="input" color={selected === "" ? "placeholder" : "white"}>
+          {placeholder}
+        </Text>
+        <Text variant="input" color="white">
+          {selected}
+        </Text>
       </Flex>
 
       {options.map((option) => (
@@ -85,24 +92,5 @@ export default function CustomDropdown({
         </option>
       ))}
     </DropdownContainer>
-  );
-}
-
-function Container(props: any) {
-  const { colorMode } = useColorMode();
-
-  const bgColor = { light: "gray.50", dark: "gray.900" };
-
-  const color = { light: "black", dark: "white" };
-  return (
-    <Flex
-      direction="row"
-      alignItems="center"
-      justifyContent="space-around"
-      w="20rem"
-      bg={bgColor[colorMode]}
-      color={color[colorMode]}
-      {...props}
-    />
   );
 }

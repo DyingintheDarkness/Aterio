@@ -26,14 +26,11 @@ const theme = extendTheme({
       baseStyle: {
         field: {
           backgroundColor: "background",
-          width: "20rem",
-          borderColor: "border.black",
-          borderWidth: "2px",
-          borderStyle: "solid",
+          width: "100%",
           borderRadius: "2px",
           color: "white",
           _placeholder: {
-            color: "white",
+            color: "placeholder",
           },
         },
       },
@@ -48,10 +45,13 @@ const theme = extendTheme({
           color: "white",
           bg: "brand.100",
           outlineColor: "transparent",
-          margin: "10rem",
           borderColor: "border.black",
           borderWidth: "2px",
           borderStyle: "solid",
+          _disabled: {
+            opacity: 0.5,
+          },
+
           _hover: {
             bg: "brand.100",
             borderColor: "white",
@@ -118,35 +118,39 @@ const theme = extendTheme({
           fontWeight: 500,
           fontSize: "3rem",
         },
+        menuHeading: {
+          fontFamily: "HK Grotesk",
+          fontWeight: 300,
+          fontSize: "2rem",
+          textTransform: "uppercase",
+        },
+        menuItem: {
+          fontFamily: "HK Grotesk",
+          fontWeight: 500,
+          fontSize: "1.3rem",
+          whiteSpace: "nowrap",
+        },
+        input: {
+          color: "placeholder",
+        },
       },
     },
   },
 
-  semanticTokens: {
-    colors: {
-      text: {
-        default: "#fff",
-      },
-    },
-    radii: {
-      button: "2px",
-      circleButton: "50%",
-    },
-  },
+  semanticTokens: {},
 
   colors: {
     background: "#18181C",
     black: "#000",
     white: "#fff",
     darkText: "#444444",
+    placeholder: "#8B8B8D",
     brand: {
       100: "#8A2900",
     },
+
     border: {
       black: "#22252F",
-      brand: {
-        100: "#975b42",
-      },
     },
   },
 

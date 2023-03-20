@@ -1,0 +1,317 @@
+[
+  {
+    "title": "STARTERS",
+    "dishes": [
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      }
+    ]
+  },
+  {
+    "title": "SPECIALS",
+    "dishes": [
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      }
+    ]
+  },
+  {
+    "title": "Main COurse",
+    "dishes": [
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      }
+    ]
+  },
+  {
+    "title": "APPETIZERS",
+    "dishes": [
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      }
+    ]
+  },
+  {
+    "title": "SIDES",
+    "dishes": [
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      }
+    ]
+  },
+  {
+    "title": "DessErts",
+    "dishes": [
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      }
+    ]
+  },
+  {
+    "title": "DRINKS",
+    "dishes": [
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      },
+      {
+        "name": "Fried Calamari",
+        "price": 12.95
+      }
+    ]
+  }
+]

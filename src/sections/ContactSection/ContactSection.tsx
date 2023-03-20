@@ -1,6 +1,6 @@
 import { Wrap, Flex, Text } from "@chakra-ui/react";
 import { useState } from "react";
-import ContactInfo from "../../src/components/ContactInfo/ContactInfo";
+import ContactInfo from "../../components/ContactInfo/ContactInfo";
 
 export default function ContactSection() {
   return (
@@ -17,7 +17,9 @@ export default function ContactSection() {
         Find Us Right Here
       </Text>
 
-      <ContactInfo />
+      <Wrap spacing="10rem" justify="center" marginRight="-10">
+        <ContactInfo />
+      </Wrap>
     </Flex>
   );
 }
