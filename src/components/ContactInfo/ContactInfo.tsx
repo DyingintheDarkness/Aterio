@@ -2,7 +2,6 @@ import { Flex, Wrap, Text, WrapItem } from "@chakra-ui/react";
 import React from "react";
 
 export default function ContactInfo() {
-  
   return (
     <>
       <WrapItem>

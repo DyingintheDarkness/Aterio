@@ -131,7 +131,6 @@ export default function Footer() {
         width: "100%",
         alignItems: "flex-start",
         justifyContent: "flex-start",
-        padding: "2rem 0 4rem 4rem", // top right bottom left
         "a,p": {
           color: "black",
         },
@@ -141,9 +140,9 @@ export default function Footer() {
       <Flex
         sx={{
           flexDirection: "column",
-          justifyContent: "flex-start",
-          alignItems: "flex-start",
-          width: "80%",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
         }}
       >
         <Flex
@@ -151,22 +150,32 @@ export default function Footer() {
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "baseline",
-            marginBottom: "-1rem",
+            marginBottom: "-.5rem",
             width: "100%",
+            pl: ".5rem",
+            pr: ".5rem",
           }}
         >
           <Link variant="title" color="black">
             Aterio
           </Link>
-          <Text>© 2017 Aterio. All Rights Reserved</Text>
+          <Text whiteSpace={"break-spaces"}>
+            © 2017 Aterio. All Rights Reserved
+          </Text>
         </Flex>
 
         <Box className="line" backgroundColor={"brand.100"} />
       </Flex>
 
-      <Wrap spacing="4rem">
+      <Wrap spacing={{base: "3.5rem", md: "4rem", lg: "4.5rem"}} pl="2rem" pb="1rem">
         <WrapItem>
-          <Text variant="normal" width="20rem">
+          <Text
+            variant="normal"
+            width="20rem"
+            fontSize={{
+              md: "1.2rem",
+            }}
+          >
             Our passion for culinary excellence is reflected in every dish we
             create. Indulge in our flavorful delights and savor the experience.
           </Text>
@@ -182,13 +191,13 @@ export default function Footer() {
                   gap: ".5rem",
                 }}
               >
-                <Text variant="heading" fontSize={"2rem"}>
+                <Text variant="heading" fontSize={{base: "2rem",  md: "2rem" }}>
                   {footerNavLink.title}
                 </Text>
                 {footerNavLink.links.map((link) => {
                   return (
                     <Link
-                    key={link.name}
+                      key={link.name}
                       variant="footerNav"
                       fontSize={"1.2rem"}
                       href={link.href}

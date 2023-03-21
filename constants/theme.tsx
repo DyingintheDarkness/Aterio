@@ -2,10 +2,11 @@ import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
 const breakpoints = {
-  sm: "40em",
-  md: "52em",
-  lg: "64em",
-  xl: "80em",
+  xsm: "320px",
+  sm: "480px",
+  md: "768px",
+  lg: "992px",
+  xl: "1200px",
 };
 
 const theme = extendTheme({
@@ -13,6 +14,7 @@ const theme = extendTheme({
     global: (props: any) => ({
       "html,body": {
         backgroundColor: "background",
+        overflowX: "hidden",
       },
       ".line": {
         width: "100%",
@@ -69,7 +71,7 @@ const theme = extendTheme({
       variants: {
         nav: (props: any) => ({
           _hover: "",
-          fontSize: "1.4rem",
+          fontSize: "2rem",
         }),
         navUnderline: (props: any) => ({
           textTransform: "lowercase",
@@ -80,7 +82,7 @@ const theme = extendTheme({
         }),
 
         title: {
-          fontSize: "3rem",
+          fontSize: "2rem",
           fontFamily: "Sinoreta",
         },
       },
@@ -97,9 +99,18 @@ const theme = extendTheme({
         fontWeight: 500,
       },
       variants: {
+        normal: {
+          fontSize: {
+            base: "1rem",
+            sm: "1.4rem",
+          },
+        },
         title: {
           fontFamily: "Sinoreta",
-          fontSize: "6rem",
+          fontSize: {
+            base: "2.5rem",
+            sm: "4rem",
+          },
         },
         secondaryTitle: {
           fontFamily: "Sinoreta",
@@ -107,7 +118,7 @@ const theme = extendTheme({
         },
         italicTitle: {
           fontFamily: "HK Grotesk",
-          fontSize: "6rem",
+          fontSize: "4rem",
           fontStyle: "italic",
           fontWeight: 300,
           textTransform: "uppercase",
@@ -116,7 +127,11 @@ const theme = extendTheme({
         heading: {
           fontFamily: "HK Grotesk",
           fontWeight: 500,
-          fontSize: "3rem",
+          fontSize: {
+            base: "2rem",
+            md: "3rem"
+          }
+          
         },
         menuHeading: {
           fontFamily: "HK Grotesk",
@@ -144,6 +159,7 @@ const theme = extendTheme({
     black: "#000",
     white: "#fff",
     darkText: "#444444",
+    altDarkText: "#737373",
     placeholder: "#8B8B8D",
     brand: {
       100: "#8A2900",
@@ -154,7 +170,7 @@ const theme = extendTheme({
     },
   },
 
-  // breakpoints,
+  breakpoints,
 });
 
 export default theme;

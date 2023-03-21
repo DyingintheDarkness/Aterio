@@ -24,12 +24,16 @@ export default function MenuSection() {
   return (
     <Flex
       sx={{
-        flexDir: "row",
+        flexDir: {
+          base: "column",
+          md: "row",
+        },
         justifyContent: "space-between",
         alignItems: "center",
         backgroundColor: "brand.100",
         padding: "2rem",
         position: "relative",
+        gap: "2rem",
       }}
     >
       <Flex
@@ -38,6 +42,7 @@ export default function MenuSection() {
           justifyContent: "flex-start",
           alignItems: "center",
           whiteSpace: "nowrap",
+          width: "100%",
         }}
       >
         <Text variant="title">Our Menu</Text>
@@ -48,8 +53,11 @@ export default function MenuSection() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            width: {
+              base: "100%",
+              md: "80%",
 
-            width: "100%",
+            },
             padding: ".5rem 1rem .5rem 1rem", // top right bottom left
             fontSize: "1.2rem",
           }}
@@ -78,7 +86,7 @@ export default function MenuSection() {
           justifyContent: "center",
           alignItems: "center",
           gap: "1.5rem",
-          width: "40rem",
+          width: "100%",
           position: "relative",
         }}
       >
@@ -134,19 +142,23 @@ function MenuCard({
           }}
         >
           <Text
-            variant={"italicTitle"}
+            variant="italicTitle"
             sx={{
-              fontSize: "4rem",
+              fontSize: {
+                base: "2rem",
+                md: "4rem"
+              },
+
               color: "white",
-              marginRight: "4rem",
+              // marginRight: "4rem",
             }}
           >
             {item.name}
           </Text>
           <Box
             onClick={() => setShowInfo(!showInfo)}
-            height={"3rem"}
-            width={"3rem"}
+            height={"2rem"}
+            width={"2rem"}
           >
             {showInfo ? (
               <svg
@@ -204,6 +216,8 @@ function MenuCard({
           top: "100%",
           marginTop: "1rem",
           zIndex: 1,
+          paddingLeft: "1rem",
+          paddingRight: ".5rem",
         }}
       >
         <Text>{item.info}</Text>

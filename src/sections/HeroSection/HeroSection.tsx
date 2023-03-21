@@ -4,18 +4,31 @@ export default function HeroSection() {
   return (
     <Flex
       sx={{
-        flexDirection: "row",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
+        position: "relative",
       }}
     >
       <Flex
-        justify="space-between"
+        justifyContent={"space-between"}
         sx={{
-          flexDirection: "row",
-          width: "80%",
+          flexDirection: {
+            base: "column",
+            md: "row",
+          },
+          gap: {
+            base: "2rem",
+            md: "0",
+          },
+
+          width: {
+            base: "100%",
+            md: "80%",
+          },
           marginTop: "1rem",
+          pl: "1rem",
         }}
       >
         <Flex
@@ -37,7 +50,10 @@ export default function HeroSection() {
           <Text
             variant="normal"
             sx={{
-              width: "28rem",
+              width: {
+                base: "20rem",
+                sm: "30rem",
+              },
             }}
           >
             Enjoy good food and fresh drinks with your friends and family.
@@ -56,21 +72,46 @@ export default function HeroSection() {
           </Flex>
         </Flex>
 
-        <Flex>
+        <Flex
+          sx={{
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            alignItems: "flex-start",
+            position: "relative",
+          }}
+        >
           <Box
             sx={{
-              position: "relative",
-              width: "100%",
-              height: "100%",
+              width: {
+                base: "90%",
+                md: "100%",
+              },
+              height: {
+                base: "100%",
+                md: "100%",
+              },
             }}
           >
             <Image
               src="/images/hero/portrait-1.png"
               sx={{
-                width: "100%",
-                height: "124%",
+                width: {
+                  base: "30rem",
+                  xsm: "36rem",
+                  md: "100%",
+                },
+
+                height: {
+                  base: "35rem",
+                  md: "92%",
+                },
                 opacity: 0.5,
-                position: "absolute",
+                ml: {
+                  md: "-2rems",
+                },
+                position: {
+                  base: "relative",
+                },
                 zIndex: 1,
               }}
             />
@@ -80,8 +121,15 @@ export default function HeroSection() {
               sx={{
                 whiteSpace: "nowrap",
                 zIndex: 2,
-                position: "relative",
-                bottom: "-20rem",
+                position: {
+                  base: "absolute",
+                },
+                bottom: {
+                  base: "-1%",
+                  md: "5%",
+                },
+
+                // bottom: "-20rem",
                 padding: ".5rem",
               }}
             >

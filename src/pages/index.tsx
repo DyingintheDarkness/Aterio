@@ -13,9 +13,13 @@ export default function Index(props: any) {
   return (
     <Layout>
       <HeroSection />
+
       <CuisineSection />
+      <Box p="2rem"></Box>
       <MenuSection />
+      <Box p="2rem"></Box>
       <ContactSection />
+      <Box p="2rem"></Box>
     </Layout>
   );
 }

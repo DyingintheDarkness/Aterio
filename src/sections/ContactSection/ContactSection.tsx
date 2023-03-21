@@ -9,15 +9,15 @@ export default function ContactSection() {
         flexDir: "column",
         justifyContent: "center",
         alignItems: "center",
-        padding: "4rem 0",
-        gap: "4rem",
+        gap: "2rem",
+        p: "2rem",
       }}
     >
-      <Text variant="title" fontSize={"4rem"} textAlign="center">
+      <Text variant="title" textAlign="center" w="100%">
         Find Us Right Here
       </Text>
 
-      <Wrap spacing="10rem" justify="center" marginRight="-10">
+      <Wrap spacing={{ base: "3.5rem", md: "6rem", lg: "10rem"}} justify="center" sx={{}} >
         <ContactInfo />
       </Wrap>
     </Flex>
