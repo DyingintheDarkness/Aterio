@@ -1,6 +1,7 @@
 import { Flex, Link, Box } from "@chakra-ui/react";
 import React from "react";
 
+
 export default function Navbar() {
   const [showNav, setShowNav] = React.useState(false);
   return (
@@ -12,6 +13,7 @@ export default function Navbar() {
           justifyContent: "center",
           alignItems: "center",
           paddingTop: ".5rem",
+          paddingBottom: "1rem",
           display: {
             base: "none",
             md: "flex",
@@ -29,6 +31,7 @@ export default function Navbar() {
             },
           },
           a: {
+            color: "#fff",
             fontSize: {
               md: "1.2rem",
               lg: "1.3rem",
@@ -58,13 +61,25 @@ export default function Navbar() {
               gap: "2rem",
             }}
           >
-            <Link variant={"nav"}>Home</Link>
-            <Link variant={"nav"}>Cuisine</Link>
-            <Link variant={"nav"}>Menu</Link>
-            <Link variant={"nav"}>Contact</Link>
+            <Link variant={"nav"} href="/">
+              Home
+            </Link>
+            <Link variant={"nav"} href="/#cuisine">
+              Cuisine
+            </Link>
+            <Link variant={"nav"} href="/menu">
+              Menu
+            </Link>
+            <Link variant={"nav"} href="/#contact">
+              Contact
+            </Link>
           </Flex>
 
-          <Link variant={"navUnderline"} className="navUnderline">
+          <Link
+            variant={"navUnderline"}
+            className="navUnderline"
+            href="/reservation"
+          >
             make a reservation
           </Link>
         </Flex>
@@ -84,6 +99,7 @@ export default function Navbar() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          pb: "1rem",
           display: {
             base: "flex",
             md: "none",
@@ -159,16 +175,23 @@ export default function Navbar() {
             },
           }}
         >
-          <Link variant={"nav"}>Home</Link>
-          <Link variant={"nav"}>Cuisine</Link>
-          <Link variant={"nav"}>Menu</Link>
-          <Link variant={"nav"}>Contact</Link>
-          <Link variant={"navUnderline"}>make a reservation</Link>
+          <Link variant={"nav"} href="/">
+            Home
+          </Link>
+          <Link variant={"nav"} href="/#cuisine">
+            Cuisine
+          </Link>
+          <Link variant={"nav"} href="/menu">
+            Menu
+          </Link>
+          <Link variant={"nav"} href="/#contact">
+            Contact
+          </Link>
+          <Link variant={"navUnderline"} href="/reservation">
+            make a reservation
+          </Link>
         </Flex>
       </Flex>
     </>
   );
 }
-
-function NavLink() {}
-function NavTitle() {}

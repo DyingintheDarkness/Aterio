@@ -17,5 +17,6 @@ model Reservation {
   contact      String
   membersCount String
   time         String
+  seated       Boolean  @default(false)
   archived     Boolean  @default(false)
 }

@@ -3,6 +3,7 @@ import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 export default function HeroSection() {
   return (
     <Flex
+      id="hero"
       sx={{
         flexDirection: "column",
         justifyContent: "center",

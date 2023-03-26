@@ -16,6 +16,9 @@ const theme = extendTheme({
         backgroundColor: "background",
         overflowX: "hidden",
       },
+      "html,body,#__next, #__next > div:first-child": {
+        scrollBehavior: "smooth",
+      },
       ".line": {
         width: "100%",
         height: ".1rem",
@@ -55,8 +58,12 @@ const theme = extendTheme({
           },
 
           _hover: {
-            bg: "brand.100",
             borderColor: "white",
+            color: "black"
+          },
+          _active: {
+            bg: "white",
+            color: "black",
           },
         }),
       },
@@ -129,9 +136,8 @@ const theme = extendTheme({
           fontWeight: 500,
           fontSize: {
             base: "2rem",
-            md: "3rem"
-          }
-          
+            md: "3rem",
+          },
         },
         menuHeading: {
           fontFamily: "HK Grotesk",
@@ -146,6 +152,9 @@ const theme = extendTheme({
           whiteSpace: "nowrap",
         },
         input: {
+          color: "placeholder",
+        },
+        placeholder: {
           color: "placeholder",
         },
       },

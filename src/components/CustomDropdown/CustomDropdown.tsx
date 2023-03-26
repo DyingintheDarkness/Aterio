@@ -16,14 +16,11 @@ const DropdownContainer = chakra("div", {
     "&.hidden .option:not(:first-child)": {
       display: "none",
     },
-    // box: {
-    // display: "flex",
-    // flexDirection: "column",
-    // alignItems: "center",
-    // justifyContent: "center",
-    // width: "20rem",
-    // color: "white",
-    // },
+    w: {
+      base: "140%",
+      xsm: "80vw",
+      lg: "40vw"
+    },
     ".option": {
       borderColor: "border.black",
       borderWidth: "2px",

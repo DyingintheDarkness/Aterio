@@ -128,9 +128,14 @@ export default function Footer() {
       sx={{
         flexDirection: "column",
         backgroundColor: "white",
+        
         width: "100%",
         alignItems: "flex-start",
         justifyContent: "flex-start",
+        mt: {
+          base: "2rem",
+          md: "4rem",
+        },
         "a,p": {
           color: "black",
         },
@@ -167,7 +172,11 @@ export default function Footer() {
         <Box className="line" backgroundColor={"brand.100"} />
       </Flex>
 
-      <Wrap spacing={{base: "3.5rem", md: "4rem", lg: "4.5rem"}} pl="2rem" pb="1rem">
+      <Wrap
+        spacing={{ base: "3.5rem", md: "4rem", lg: "4.5rem" }}
+        pl="2rem"
+        pb="1rem"
+      >
         <WrapItem>
           <Text
             variant="normal"
@@ -191,7 +200,7 @@ export default function Footer() {
                   gap: ".5rem",
                 }}
               >
-                <Text variant="heading" fontSize={{base: "2rem",  md: "2rem" }}>
+                <Text variant="heading" fontSize={{ base: "2rem", md: "2rem" }}>
                   {footerNavLink.title}
                 </Text>
                 {footerNavLink.links.map((link) => {

@@ -1,8 +1,12 @@
 import { Image, Flex, Text } from "@chakra-ui/react";
 
+
+
+
 export default function CuisineSection() {
   return (
     <Flex
+      id="cuisine"
       sx={{
         flexDirection: {
           base: "column",
@@ -44,7 +48,6 @@ export default function CuisineSection() {
           sx={{
             width: {
               base: "90%",
-              xsm: "30rem",
             },
           }}
         >

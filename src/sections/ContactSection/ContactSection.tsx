@@ -5,6 +5,7 @@ import ContactInfo from "../../components/ContactInfo/ContactInfo";
 export default function ContactSection() {
   return (
     <Flex
+      id="contact"
       sx={{
         flexDir: "column",
         justifyContent: "center",
@@ -17,7 +18,15 @@ export default function ContactSection() {
         Find Us Right Here
       </Text>
 
-      <Wrap spacing={{ base: "3.5rem", md: "6rem", lg: "10rem"}} justify="center" sx={{}} >
+      <Wrap
+        spacing={{ base: "3.5rem", md: "6rem", lg: "10rem" }}
+        ml={{
+          base: "5rem",
+          md: "0",
+        }}
+        alignItems={"center"}
+        sx={{}}
+      >
         <ContactInfo />
       </Wrap>
     </Flex>
