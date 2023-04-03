@@ -1,4 +1,4 @@
-import { Box, Flex, Link, LinkBox, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
