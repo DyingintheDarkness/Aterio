@@ -1,17 +1,21 @@
-import { Flex, Wrap, Text, WrapItem } from "@chakra-ui/react";
-import React from "react";
+import { Flex, Text, WrapItem } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+const MotionFlex = motion(Flex);
+
+
 
 export default function ContactInfo() {
   return (
     <>
       <WrapItem>
-        <Flex
+        <MotionFlex
           sx={{
             flexDir: "column",
             justifyContent: "flex-start",
             alignItems: "flex-start",
             gap: "1rem",
           }}
+          
         >
           <Text variant="heading">Address</Text>
           <Text variant="normal">
@@ -19,7 +23,7 @@ export default function ContactInfo() {
             <br />
             Square, London
           </Text>
-        </Flex>
+        </MotionFlex>
       </WrapItem>
       <WrapItem>
         <Flex

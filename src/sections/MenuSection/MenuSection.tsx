@@ -1,7 +1,11 @@
-import { Box, Flex, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, LinkBox, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
+const MotionFlex = motion(Flex);
+const MotionBox = motion(Box);
 export default function MenuSection() {
+  // @ts-ignore
   const [menuItems, setMenuItems] = useState<
     {
       name: string;
@@ -34,6 +38,7 @@ export default function MenuSection() {
         padding: "2rem",
         position: "relative",
         gap: "2rem",
+        p: "2rem",
       }}
     >
       <Flex
@@ -56,13 +61,14 @@ export default function MenuSection() {
             width: {
               base: "100%",
               md: "80%",
-
             },
             padding: ".5rem 1rem .5rem 1rem", // top right bottom left
-            fontSize: "1.2rem",
+            a: {
+              fontSize: "1.2rem",
+            }
           }}
         >
-          <Text>See More</Text>
+          <Link>See More</Link>
           <Link>
             <svg
               width="24"
@@ -146,22 +152,27 @@ function MenuCard({
             sx={{
               fontSize: {
                 base: "2rem",
-                md: "4rem"
+                md: "4rem",
               },
 
               color: "white",
-              // marginRight: "4rem",
             }}
           >
             {item.name}
           </Text>
-          <Box
+          <MotionBox
             onClick={() => setShowInfo(!showInfo)}
             height={"2rem"}
             width={"2rem"}
+            animate={{
+              rotate: showInfo ? 90 : 0,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
           >
             {showInfo ? (
-              <svg
+              <motion.svg
                 width="100%"
                 height="100%"
                 viewBox="0 0 40 4"
@@ -174,9 +185,9 @@ function MenuCard({
                   strokeWidth="3"
                   strokeLinecap="round"
                 />
-              </svg>
+              </motion.svg>
             ) : (
-              <svg
+              <motion.svg
                 width="100%"
                 height="100%"
                 viewBox="0 0 40 40"
@@ -195,14 +206,14 @@ function MenuCard({
                   strokeWidth="3"
                   strokeLinecap="round"
                 />
-              </svg>
+              </motion.svg>
             )}
-          </Box>
+          </MotionBox>
         </Flex>
         <Box className="line" />
       </Flex>
 
-      <Flex
+      <MotionFlex
         className={`info ${showInfo ? "" : "hidden"}`}
         sx={{
           color: "white",
@@ -216,13 +227,24 @@ function MenuCard({
           top: "100%",
           marginTop: "1rem",
           zIndex: 1,
-          paddingLeft: "1rem",
+
           paddingRight: ".5rem",
         }}
+        initial={{
+          opacity: 0,
+          height: 0,
+        }}
+        animate={{
+          opacity: showInfo ? 1 : 0,
+          height: showInfo ? "auto" : 0,
+        }}
+        transition={{
+          duration: 0.5,
+        }}
       >
-        <Text>{item.info}</Text>
+        <Text pl=".5rem">{item.info}</Text>
         <Box className="line"></Box>
-      </Flex>
+      </MotionFlex>
     </Flex>
   );
 }

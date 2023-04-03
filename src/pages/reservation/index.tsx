@@ -3,8 +3,6 @@ import {
   Flex,
   Input,
   Button,
-  Wrap,
-  WrapItem,
   useToast,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
@@ -13,6 +11,10 @@ import ContactInfo from "../../components/ContactInfo/ContactInfo";
 import CustomDropdown from "../../components/CustomDropdown/CustomDropdown";
 import Layout from "../../components/Layout/Layout";
 import data from "../../../data/data.json";
+import { motion } from "framer-motion";
+
+
+const MotionText = motion(Text);
 
 export default function Reservation() {
   const [formData, setFormData] = useState({
@@ -99,7 +101,24 @@ export default function Reservation() {
             lg: "40vw",
           }}
         >
-          <Text variant="title">Make a Reservation</Text>
+          <MotionText variant="title" 
+             animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                
+                ease: "easeInOut",
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: "-5vw",
+              transition: {
+                ease: "easeInOut",
+              },
+            }}
+          >Make a Reservation</MotionText>
 
           <Flex
             sx={{

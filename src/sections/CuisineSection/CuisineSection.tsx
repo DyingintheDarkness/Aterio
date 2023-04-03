@@ -1,9 +1,91 @@
 import { Image, Flex, Text } from "@chakra-ui/react";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
+import { useInView } from "react-intersection-observer";
 
+const MotionImage = motion(Image);
+const MotionFlex = motion(Flex);
+const MotionText = motion(Text);
 
+const list = {
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.3,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    transition: {
+      when: "afterChildren",
+    },
+  },
+};
+
+const item = {
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 },
+};
+const animations = {
+  image: {
+    animated: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1,
+        delay: 0.4,
+        ease: "easeInOut",
+      },
+    },
+    initial: {
+      opacity: 0,
+      x: "-10vw",
+      transition: {
+        delay: 1,
+        ease: "easeInOut",
+      },
+    },
+  },
+  text: {
+    animated: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0.4,
+        ease: "easeInOut",
+      },
+    },
+    initial: {
+      opacity: 0,
+      y: "-5vw",
+      transition: {
+        delay: 1,
+        ease: "easeInOut",
+      },
+    },
+  },
+};
 
 export default function CuisineSection() {
+  const { ref, inView } = useInView({});
+  const imageAnimation = useAnimation();
+  const textAnimation = useAnimation();
+  useEffect(() => {
+    console.log(inView);
+    if (!inView) {
+      imageAnimation.start(animations.image.initial);
+      textAnimation.start(animations.text.initial);
+    }
+
+    if (inView) {
+      imageAnimation.start(animations.image.animated);
+      textAnimation.start(animations.text.animated);
+    }
+  }, [inView]);
+
   return (
     <Flex
       id="cuisine"
@@ -31,10 +113,15 @@ export default function CuisineSection() {
           },
         },
       }}
+      ref={ref}
     >
-      <Image src="\images\hero\landscape-2.png" />
+      <MotionImage
+        src="\images\hero\landscape-2.png"
+        initial={{ opacity: 0, x: "-10vw" }}
+        animate={imageAnimation}
+      />
 
-      <Flex
+      <MotionFlex
         sx={{
           flexDirection: "column",
           gap: "2rem",
@@ -42,8 +129,9 @@ export default function CuisineSection() {
           justifyContent: "center",
           width: "100%",
         }}
+        animate={textAnimation}
       >
-        <Text
+        <MotionText
           variant="normal"
           sx={{
             width: {
@@ -53,8 +141,8 @@ export default function CuisineSection() {
         >
           Come and indulge in a culinary delight at our restaurant. Check out
           our roof top dining, bar, buffet...
-        </Text>
-        <Flex
+        </MotionText>
+        <MotionFlex
           sx={{
             flexDir: "column",
             justifyContent: "center",
@@ -69,15 +157,24 @@ export default function CuisineSection() {
             backgroundSize: "cover",
 
             p: {
-              color: "altDarkText",
+              color: "white",
             },
           }}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={list}
         >
-          <Text variant="italicTitle">dinner</Text>
-          <Text variant="italicTitle">bar</Text>
-          <Text variant="italicTitle">buffet</Text>
-        </Flex>
-      </Flex>
+          <MotionText variants={item} variant="italicTitle">
+            dinner
+          </MotionText>
+          <MotionText variants={item} variant="italicTitle">
+            bar
+          </MotionText>
+          <MotionText variants={item} variant="italicTitle">
+            buffet
+          </MotionText>
+        </MotionFlex>
+      </MotionFlex>
     </Flex>
   );
 }

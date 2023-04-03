@@ -1,5 +1,5 @@
 import { Wrap, Text, Box, Link, WrapItem, Flex } from "@chakra-ui/react";
-import React from "react";
+
 
 export default function Footer() {
   const footerNavLinks = [

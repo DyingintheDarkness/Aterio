@@ -1,14 +1,4 @@
-import {
-  Box,
-  Text,
-  BoxProps,
-  withDefaultColorScheme,
-  Flex,
-  Spacer,
-  chakra,
-  useColorMode,
-  Center,
-} from "@chakra-ui/react";
+import { Text, Flex, chakra } from "@chakra-ui/react";
 import React from "react";
 
 const DropdownContainer = chakra("div", {
@@ -19,7 +9,7 @@ const DropdownContainer = chakra("div", {
     w: {
       base: "140%",
       xsm: "80vw",
-      lg: "40vw"
+      lg: "40vw",
     },
     ".option": {
       borderColor: "border.black",

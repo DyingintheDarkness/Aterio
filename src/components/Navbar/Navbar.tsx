@@ -1,9 +1,19 @@
 import { Flex, Link, Box } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React from "react";
 
+const MotionLink = motion(Link);
 
 export default function Navbar() {
   const [showNav, setShowNav] = React.useState(false);
+  const desktopLinkHover = {
+    scale: 1.1,
+    transition: {
+      duration: 0.2,
+    },
+  };
+  
+
   return (
     <>
       <Flex
@@ -49,9 +59,13 @@ export default function Navbar() {
             pr: ".5rem",
           }}
         >
-          <Link variant={"title"} className="titleNav">
+          <MotionLink
+            whileHover={desktopLinkHover}
+            variant={"title"}
+            className="titleNav"
+          >
             Aterio
-          </Link>
+          </MotionLink>
 
           <Flex
             sx={{
@@ -61,27 +75,41 @@ export default function Navbar() {
               gap: "2rem",
             }}
           >
-            <Link variant={"nav"} href="/">
+            <MotionLink whileHover={desktopLinkHover} variant={"nav"} href="/">
               Home
-            </Link>
-            <Link variant={"nav"} href="/#cuisine">
+            </MotionLink>
+            <MotionLink
+              whileHover={desktopLinkHover}
+              variant={"nav"}
+              href="/#cuisine"
+            >
               Cuisine
-            </Link>
-            <Link variant={"nav"} href="/menu">
+            </MotionLink>
+            <MotionLink
+              whileHover={desktopLinkHover}
+              variant={"nav"}
+              href="/menu"
+            >
               Menu
-            </Link>
-            <Link variant={"nav"} href="/#contact">
+            </MotionLink>
+            <MotionLink
+              whileHover={desktopLinkHover}
+              variant={"nav"}
+              href="/#contact"
+              
+            >
               Contact
-            </Link>
+            </MotionLink>
           </Flex>
 
-          <Link
+          <MotionLink
+            whileHover={desktopLinkHover}
             variant={"navUnderline"}
             className="navUnderline"
             href="/reservation"
           >
             make a reservation
-          </Link>
+          </MotionLink>
         </Flex>
         <Box
           as="span"
@@ -117,7 +145,7 @@ export default function Navbar() {
             alignItems: "center",
           }}
         >
-          <Link variant={"title"}>Aterio</Link>
+          <MotionLink variant={"title"}>Aterio</MotionLink>
           <svg
             onClick={() => setShowNav(!showNav)}
             width="100%"
@@ -175,21 +203,21 @@ export default function Navbar() {
             },
           }}
         >
-          <Link variant={"nav"} href="/">
+          <MotionLink variant={"nav"} href="/">
             Home
-          </Link>
-          <Link variant={"nav"} href="/#cuisine">
+          </MotionLink>
+          <MotionLink variant={"nav"} href="/#cuisine">
             Cuisine
-          </Link>
-          <Link variant={"nav"} href="/menu">
+          </MotionLink>
+          <MotionLink variant={"nav"} href="/menu">
             Menu
-          </Link>
-          <Link variant={"nav"} href="/#contact">
+          </MotionLink>
+          <MotionLink variant={"nav"} href="/#contact">
             Contact
-          </Link>
-          <Link variant={"navUnderline"} href="/reservation">
+          </MotionLink>
+          <MotionLink variant={"navUnderline"} href="/reservation">
             make a reservation
-          </Link>
+          </MotionLink>
         </Flex>
       </Flex>
     </>

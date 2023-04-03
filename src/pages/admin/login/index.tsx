@@ -56,9 +56,9 @@ export default function AdminLogin() {
       <Button
         isDisabled={password.length < 1}
         onClick={async () => {
-          let req;
+          let res;
           try {
-            req = await fetch("/api/login", {
+            res = await fetch("/api/login", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -70,10 +70,10 @@ export default function AdminLogin() {
           } catch (err) {
             console.log(err);
           }
-          if (!req) return console.log("no req");
+          if (!res) return;
 
-          if (req.status === 200) {
-            let xToken = req.headers.get("x-token");
+          if (res.status === 200) {
+            let xToken = res.headers.get("x-token");
             setCookie("x-token", xToken, {
               secure: true,
               expires: new Date(Date.now() + 7 * 60 * 60 * 1000), // 7 hours

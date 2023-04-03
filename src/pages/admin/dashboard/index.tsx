@@ -3,18 +3,14 @@ import {
   Flex,
   Text,
   Button,
-  Box,
   Input,
   WrapItem,
   Wrap,
-  Table,
   useToast,
   Switch,
-  FormLabel,
-  cookieStorageManager,
 } from "@chakra-ui/react";
 import Fonts from "../../../components/Fonts/Fonts";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { getCookie } from "cookies-next";
 import { NextPageContext } from "next";
 import { ReservationType } from "../../../../@types/types";

@@ -1,8 +1,10 @@
 import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
+const MotionFlex = motion(Flex)
 export default function HeroSection() {
   return (
-    <Flex
+    <MotionFlex
       id="hero"
       sx={{
         flexDirection: "column",
@@ -12,7 +14,7 @@ export default function HeroSection() {
         position: "relative",
       }}
     >
-      <Flex
+      <MotionFlex
         justifyContent={"space-between"}
         sx={{
           flexDirection: {
@@ -30,6 +32,19 @@ export default function HeroSection() {
           },
           marginTop: "1rem",
           pl: "1rem",
+        }}
+        // initial drowndown text animation
+        initial={{
+          opacity: 0,
+          y: 100,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 1,
+            delay: 0.5,
+          },
         }}
       >
         <Flex
@@ -140,7 +155,7 @@ export default function HeroSection() {
             </Text>
           </Box>
         </Flex>
-      </Flex>
-    </Flex>
+      </MotionFlex>
+    </MotionFlex>
   );
 }

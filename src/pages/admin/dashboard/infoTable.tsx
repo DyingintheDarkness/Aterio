@@ -1,11 +1,6 @@
 import {
   Flex,
   Text,
-  Button,
-  Box,
-  Input,
-  WrapItem,
-  Wrap,
 } from "@chakra-ui/react";
 
 function InfoTable({ archived, seated, name, contact, membersCount, time }) {
