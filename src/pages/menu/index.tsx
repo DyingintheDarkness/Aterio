@@ -67,7 +67,7 @@ export default function Menu() {
                       },
                       height: {
                         base: "0",
-                        md: "35rem",
+                        md: "25rem",
                       },
                       backgroundColor: "brand.100",
                       position: "relative",

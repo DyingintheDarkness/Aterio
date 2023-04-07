@@ -14,15 +14,15 @@ export default function MenuSection() {
   >([
     {
       name: "appetizers",
-      info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+      info: `Start your meal off with some delicious small bites that will tantalize your taste buds. Our appetizers are carefully crafted to offer a wide range of flavors and textures, from crispy to creamy and everything in between. Whether you're in the mood for something savory or something sweet, we've got you covered.`,
     },
     {
       name: "Sides",
-      info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec enim vitae odio suscipit hendrerit. Curabitur pellentesque, enim vel placerat porttitor, mauris leo aliquam dui, vel efficitur nisi magna in metus. Nullam eu sem tincidunt, egestas mi sit amet, bibendum tellus. Proin dignissim luctus turpis, ut aliquet ante. Nunc egestas ligula ac urna rutrum, vitae volutpat nisi malesuada. Sed luctus ultricies ultrices. Suspendisse euismod dolor eget nibh dignissim molestie. Nullam nec egestas urna. Curabitur sit amet nulla massa. Sed eu semper augue, quis scelerisque lacus`,
+      info: ` Complement your main course with one of our tasty side dishes. Our sides are made with the freshest ingredients and prepared with care to ensure maximum flavor and nutritional value. From classic favorites like roasted vegetables and mashed potatoes to more unique options like quinoa salad and sweet potato fries, there's something for everyone.`,
     },
     {
       name: "Desserts",
-      info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec enim vitae odio suscipit hendrerit. Curabitur pellentesque, enim vel placerat porttitor, mauris leo aliquam dui, vel efficitur nisi magna in metus. Nullam eu sem tincidunt, egestas mi sit amet, bibendum tellus. Proin dignissim luctus turpis, ut aliquet ante. Nunc egestas ligula ac urna rutrum, vitae volutpat nisi malesuada. Sed luctus ultricies ultrices. Suspendisse euismod dolor eget nibh dignissim molestie. Nullam nec egestas urna. Curabitur sit amet nulla massa. Sed eu semper augue, quis scelerisque lacus`,
+      info: `End your meal on a sweet note with one of our delectable desserts. Made with only the finest ingredients, our desserts are a perfect way to indulge your sweet tooth. From rich and creamy cheesecake to light and fluffy mousse, our desserts are sure to satisfy your cravings. Don't forget to pair your dessert with a cup of coffee or tea for the ultimate post-meal treat.`,
     },
   ]);
   return (
@@ -65,7 +65,7 @@ export default function MenuSection() {
             padding: ".5rem 1rem .5rem 1rem", // top right bottom left
             a: {
               fontSize: "1.2rem",
-            }
+            },
           }}
         >
           <Link>See More</Link>
@@ -178,6 +178,10 @@ function MenuCard({
                 viewBox="0 0 40 4"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                style={{
+                  position: "relative",
+                  zIndex: 10,
+                }}
               >
                 <path
                   d="M2 2L38 2"
@@ -193,6 +197,11 @@ function MenuCard({
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                style={{
+                  position: "relative",
+                  zIndex: 10,
+                  border: "2px solid white",
+                }}
               >
                 <path
                   d="M20 2L20 38"
@@ -226,9 +235,10 @@ function MenuCard({
           position: "absolute",
           top: "100%",
           marginTop: "1rem",
-          zIndex: 1,
-
+          zIndex: showInfo ? 11 : -1,
           paddingRight: ".5rem",
+          
+
         }}
         initial={{
           opacity: 0,

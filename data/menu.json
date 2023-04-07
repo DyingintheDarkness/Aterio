@@ -7,40 +7,24 @@
         "price": 12.95
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Nandos Banani",
+        "price": 50.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Appeteasers",
+        "price": 250.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Chicken Livers",
+        "price": 250.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Fino sides",
+        "price": 190.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "5 Chicked Wings",
+        "price": 120.0
       }
     ]
   },
@@ -48,89 +32,41 @@
     "title": "SPECIALS",
     "dishes": [
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Espetada",
+        "price": 695.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Grilled Chicken Tenders",
+        "price": 200.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Caramel Cheese Cake",
+        "price": 230.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Spicy Rice",
+        "price": 130.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Garlic Bread",
+        "price": 130.0
       }
     ]
   },
   {
-    "title": "Main COurse",
+    "title": "Main Course",
     "dishes": [
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Portuguese Salad",
+        "price": 245.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Mediterranean Salad",
+        "price": 350.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Chicken Caesar Wrap ",
+        "price": 335.0
       }
     ]
   },
@@ -138,44 +74,24 @@
     "title": "APPETIZERS",
     "dishes": [
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Cheesy Pizza",
+        "price": 250.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Chicken Wings",
+        "price": 250.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Chicken Livers",
+        "price": 250.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Eggnog",
+        "price": 250.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Creamed spinach",
+        "price": 200.0
       }
     ]
   },
@@ -183,134 +99,78 @@
     "title": "SIDES",
     "dishes": [
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Chocolate fruitcake",
+        "price": 120.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Ginger Pudding",
+        "price": 120.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Glazed Donuts",
+        "price": 120.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Hazelnut Brownies",
+        "price": 120.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Spice 75",
+        "price": 120.0
       }
     ]
   },
   {
-    "title": "DessErts",
+    "title": "Desserts",
     "dishes": [
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Salted caramel pecan sour",
+        "price": 80.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Carrot patch cakes",
+        "price": 80.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Buttermilk caramel puddings",
+        "price": 80.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Black pepper hasselback potatoes",
+        "price": 80.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Irish cream tiramisu",
+        "price": 80.0
       }
     ]
   },
   {
-    "title": "DRINKS",
+    "title": "Drinks",
     "dishes": [
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Aerated Beverages (Soft Drinks)",
+        "price": 90.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Water",
+        "price": 90.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Lemon Patter",
+        "price": 120.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Fruit Punch",
+        "price": 120.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Cold Coffee",
+        "price": 120.0
       },
       {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
-      },
-      {
-        "name": "Fried Calamari",
-        "price": 12.95
+        "name": "Chocolate shake",
+        "price": 120.0
       }
     ]
   }
