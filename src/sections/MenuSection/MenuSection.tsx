@@ -199,8 +199,7 @@ function MenuCard({
                 xmlns="http://www.w3.org/2000/svg"
                 style={{
                   position: "relative",
-                  zIndex: 10,
-                  border: "2px solid white",
+                  zIndex: 10
                 }}
               >
                 <path
